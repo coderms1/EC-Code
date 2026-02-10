@@ -1,8 +1,6 @@
 using System;
 using static System.Console;
 using System.Globalization;
-
-namespace HelloWorld {
   
 
 class ProjectedRaises {
@@ -28,5 +26,4 @@ class ProjectedRaises {
 	WriteLine("Next year's salary for the third employee will be {0}", salary3Next.ToString("C", CultureInfo.GetCultureInfo("en-US")));
 		
     }
-  }
 }
