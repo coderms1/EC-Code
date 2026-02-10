@@ -1,4 +1,4 @@
-# C# Class – Course Exercises Repository
+# C# Class (Early College - CIT110) – Course Exercises Repository
 
 ## Overview
 This GitHub repository is used for our **C# Programming** course.
