@@ -13,12 +13,12 @@ class ProjectedRaises {
 	// INPUT
 	const double PAY_RAISE = 0.04;
 	
-  Write("Give the salary for the first employee: ");
-  double salary1 = Convert.ToDouble(ReadLine());
-  Write("Give the salary for the second employee: ");
-  double salary2 = Convert.ToDouble(ReadLine());
-  Write("Give the salary for the third employee: ");
-  double salary3 = Convert.ToDouble(ReadLine());
+    Write("Give the salary for the first employee: ");
+    double salary1 = Convert.ToDouble(ReadLine());
+    Write("Give the salary for the second employee: ");
+    double salary2 = Convert.ToDouble(ReadLine());
+    Write("Give the salary for the third employee: ");
+    double salary3 = Convert.ToDouble(ReadLine());
 	
 	// LOGIC (calculation) 
 	double salary1Next = salary1 + (salary1 * PAY_RAISE);
