@@ -14,7 +14,7 @@ class DebugTwo2
       int first = Convert.ToInt32(ReadLine());
 
       Write("Enter another integer >> ");
-      int second = Convert.ToInt32(Readline());
+      int second = Convert.ToInt32(ReadLine());
 
       // LOGIC (calculations, conditionals, data manipulation)
       int product = first * second;
