@@ -9,7 +9,7 @@ class Hurricane {
   static void Main() {
     // INPUT
     Write("Enter the Wind Speed: ");
-    int wind = Convert.Int32(ReadLine());
+    int wind = Convert.ToInt32(ReadLine());
 
     if (wind >= 157) {
       WriteLine("This is a category 5 hurricane.");
