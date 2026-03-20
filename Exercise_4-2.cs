@@ -4,24 +4,22 @@ using System;
 using static System.Console;
 using System.Globalization;
 
-class Twitter {
+class Twitter
+{
+	static void Main()
+	{
+		string message;
 
-  static void Main() {
+		Write("Enter your message >> ");
+		message = ReadLine();
 
-    // INPUT
-    string message;
-    Write("Enter your message >> ");
-    message = ReadLine();
-
-    // LOGIC & OUTPUT 
-    if (message.Length > 140) {
-      WriteLine("The message is too long");
-    }
-    
-    else {
-      WriteLine("The message is okay");
-    }
-       
-  }
-  
+		if(message.Length > 140)
+		{
+			WriteLine("The message is too long.");
+		}
+		else
+		{
+			WriteLine("The message is okay.");
+		}
+	}
 }
