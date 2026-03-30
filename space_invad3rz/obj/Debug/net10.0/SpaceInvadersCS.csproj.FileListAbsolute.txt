@@ -1,0 +1,4 @@
+C:\stcc\cit110\space_invad3rz\space_invad3rz\obj\Debug\net10.0\SpaceInvadersCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\stcc\cit110\space_invad3rz\space_invad3rz\obj\Debug\net10.0\SpaceInvadersCS.AssemblyInfoInputs.cache
+C:\stcc\cit110\space_invad3rz\space_invad3rz\obj\Debug\net10.0\SpaceInvadersCS.AssemblyInfo.cs
+C:\stcc\cit110\space_invad3rz\space_invad3rz\obj\Debug\net10.0\SpaceInvadersCS.csproj.CoreCompileInputs.cache
