@@ -7,22 +7,22 @@ class DisplayMultiplicationTable
 {
     static void Main()
     {
-        int row, col;
+        int row, column;
 
         Write("{0,3}", "");
-        for (col = 1; col <= 10; col++)
+        for (column = 1; column <= 10; column++)
         {
-            Write("{0,4}", col);
+            Write("{0,4}", column);
         }
         WriteLine();
 
-        WriteLine(new string('-', 43));
+        WriteLine("new string('-', 43));
 
         for (row = 1; row <= 10; row++)
         {
             Write("{0,3}", row);
 
-            for (col = 1; col <= 10; col++)
+            for (column = 1; column <= 10; column++)
             {
                 Write("{0,4}", row * col);
             }
@@ -30,7 +30,6 @@ class DisplayMultiplicationTable
             WriteLine();
         }
 
-        // 👇 RIGHT HERE
         ReadKey();
     }
 }
