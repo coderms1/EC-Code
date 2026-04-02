@@ -24,7 +24,7 @@ class DisplayMultiplicationTable
 
             for (column = 1; column <= 10; column++)
             {
-                Write("{0,4}", row * col);
+                Write("{0,4}", row * column);
             }
 
             WriteLine();
