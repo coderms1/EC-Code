@@ -43,10 +43,10 @@ class HomeSales
 
       double totalSales = dSales + eSales + fSales;
 
-      WriteLine("Danielle sold     {0}", dSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
-      WriteLine("Edward sold       {0}", eSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
-      WriteLine("Francis sold      {0}", fSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
-      WriteLine("Total sales were  {0}", totalSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
+      WriteLine("Danielle sold {0}", dSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
+      WriteLine("Edward sold {0}", eSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
+      WriteLine("Francis sold {0}", fSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
+      WriteLine("Total sales were {0}", totalSales.ToString("C", CultureInfo.GetCultureInfo("en-US")));
 
       if (dSales > eSales && dSales > fSales) {
         WriteLine("Danielle sold the most");
