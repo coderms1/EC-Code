@@ -1,4 +1,9 @@
-﻿using System;
+// This is the 'main game form file' from the Space-Invaders-Style-Game that I presented in class.
+// Use this as inspiration to build bigger, more complicated programs that can be fun and help you
+// grow and expand your knowledge as a programmer!  We will cover MOST of the concepts that this 
+// program contains throughout the semester. 🎉 
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
