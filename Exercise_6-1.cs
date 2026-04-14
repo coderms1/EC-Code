@@ -2,57 +2,64 @@
 
 using System;
 using static System.Console;
-using System.Globalization;
 
-class ArrayDemo {
+class ArrayDemo
+{
+    static void Main()
+    {
+        int[] numbers = { 7, 6, 3, 2, 10, 8, 4, 5, 9, 1 };
+        int choice;
 
-  static void Main() {
+        do
+        {
+            WriteLine("\nArray Menu");
+            WriteLine("(1) View list first to last");
+            WriteLine("(2) View list last to first");
+            WriteLine("(3) View a specific position");
+            WriteLine("(4) Quit");
+            Write("Enter your choice: ");
 
-    int[] numbers = {7, 6, 3, 2, 10, 8, 4, 5, 9, 1}
-    int choice;
+            choice = Convert.ToInt32(ReadLine());
 
-    do {
-        WriteLine("Menu:");
-        //choice 1
-        WriteLine("1 - View first to last");
-        //choice 2
-        WriteLine("2 - View last to first");
-        //choice 3
-        WriteLine("3 - View specific position");
-        //choice 4
-        WriteLine("4 - Quit");
-
-        choice = Convert.ToInt32(ReadLine());
-
-        if (choice == 1) {
-            // first to last 
-            for (int i = 0; i < numbers.Length; i++) {
-                Write(numbers[i] + " ");
+            if (choice == 1)
+            {
+                // First to last
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    Write(numbers[i] + " ");
+                }
+                WriteLine();
             }
-        }
-        else if (choice == 2) {
-            // last to first
-            for (int i = numbers.Length - 1; i >= 0; i--) {
-                Write(numbers[i] + " ");
+            else if (choice == 2)
+            {
+                // Last to first
+                for (int i = numbers.Length - 1; i >= 0; i--)
+                {
+                    Write(numbers[i] + " ");
+                }
+                WriteLine();
             }
-        }
-        // user choice
-        else if (choice == 3) {
-          Write("Enter a number 0-9: ");
-          int spot = Convert.ToInt32(ReadLine());
+            else if (choice == 3)
+            {
+                Write("Enter a position (0 to 9): ");
+                int pos = Convert.ToInt32(ReadLine());
 
-            if (spot >= 0 && spot < numbers.Length) {
-              WriteLine($"Position: {numbers[spot]}");
+                if (pos >= 0 && pos < numbers.Length)
+                {
+                    WriteLine("Value at position " + pos + " is " + numbers[pos]);
+                }
+                else
+                {
+                    WriteLine("Invalid position.");
+                }
             }
-            else {
-              WriteLine("Invalid choice. ⛔");
+            else if (choice != 4)
+            {
+                WriteLine("Invalid option.");
             }
-        // invalid choice       
-        else if (choice != 4) {
-              WriteLine("Invalid choice. ⛔");
-        }
-    // continue or quit program
-    } while (choice != 4);
-    
-  }
+
+        } while (choice != 4);
+
+        WriteLine("Goodbye!");
+    }
 }
